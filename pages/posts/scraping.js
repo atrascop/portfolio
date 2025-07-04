@@ -42,7 +42,7 @@ const Post = () => (
         features like keyboard/mouse emulation DevTools-level control It was the
         perfect match for someone with a Node.js background like me.
       </P>
-      <List ml={4} my={4}>
+      {/* <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
           <span>DeepLearning, neural-style, Caffe, NodeJS</span>
@@ -67,7 +67,7 @@ const Post = () => (
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-      </List>
+      </List> */}
       {/* 
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Media coverage</Center>

@@ -123,7 +123,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
+          <WorkGridItem id="dodas" thumbnail={thumbAmembo} title="dodas">
             P2P private file sharing tool with MSN Messenger integration for
             Windows
           </WorkGridItem>

@@ -80,13 +80,11 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          {/* <LinkItem href="https://store.craftz.dog/" path={path}>
-            Wallpapers
-          </LinkItem> */}
+
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
+
           <LinkItem
             target="_blank"
             href="https://github.com/atrascop"
@@ -98,6 +96,9 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
+          </LinkItem>
+          <LinkItem href="https://automation-portfolio.vercel.app/" path={path}>
+            Automations
           </LinkItem>
         </Stack>
 
