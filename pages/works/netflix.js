@@ -4,58 +4,100 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio
+  SimpleGrid,
+  UnorderedList,
+  ListIcon
 } from '@chakra-ui/react'
+import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
-import Layout from '../../components/layouts/article'
+import { IoListCircle } from 'react-icons/io5'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="mode.tokyo">
     <Container>
       <Title>
-        flight-app <Badge>2024-</Badge>
+        Netflix,build a Sleek, Responsive Web App with TailNextUI{' '}
+        <Badge>2021</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $300k.
+        {' '}
+        Kickstart your next web project with a minimal yet powerful setup
+        designed for speed, aesthetics, and simplicity. TailNextUI provides a
+        clean foundation with essential tools for modern UI development—no
+        complex configuration required.
       </P>
+      <P>
+        Harness the full potential of{' '}
+        <Link href="https://nextjs.org/blog/next-14" target="_blank">
+          Next.js 14 <ExternalLinkIcon mx="2px" />
+        </Link>
+        for performance and scalability, styled with Tailwind CSS, enhanced with
+        Tailwind Scrollbar and Text Shadow plugins for smooth and visually
+        appealing interfaces. Icons from Heroicons and React Icons help you
+        build professional, production-ready components in no time.
+      </P>
+      Key Features:
+      <UnorderedList my={5}>
+        <ListItem>
+          ✅ Modern Framework – Next.js for fast rendering and production-grade
+          structure
+        </ListItem>
+        <ListItem>
+          ✅ Beautiful Styling – Tailwind CSS + Text Shadow plugin for elegant,
+          accessible design
+        </ListItem>
+        <ListItem>
+          ✅ Minimal Scrollbar – Tailwind Scrollbar/Hide for clean scroll
+          experiences
+        </ListItem>
+        <ListItem>
+          {' '}
+          ✅ Ready-to-Use Icons – Heroicons & React Icons for sleek and
+          consistent UI elements
+        </ListItem>
+        <ListItem>
+          ✅ Developer Friendly – TypeScript, Prettier, and PostCSS for a smooth
+          DX out of the box
+        </ListItem>
+      </UnorderedList>
+      Start building without the boilerplate clutter—TailNextUI is your gateway
+      to rapid, modern web development.
       <List ml={4} my={4}>
-        <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://flight-app4.vercel.app/">
-            https://flight-app4.vercel.app/ <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
-        </ListItem>
+        <Meta>Platform</Meta>
+        <span>Web</span>
+
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React Native</span>
+          Framework: Next.js 13+
+          <UnorderedList mt={2} pl={4}>
+            <ListItem>UI: Tailwind CSS</ListItem>
+            <ListItem>Language: TypeScript</ListItem>
+            <ListItem>Tools: Prettier, PostCSS, Autoprefixer</ListItem>
+            <ListItem>Dev UX: Tailwind Scrollbar Hide, @types support</ListItem>
+          </UnorderedList>
         </ListItem>
+
         <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
+          <Meta>Presentation</Meta>
+          <Link href="https://nextflix-app-fox.vercel.app/">
+            Nextflix-app <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+
+        <ListItem>
+          <Meta>Source</Meta>
+          <Link href="https://github.com/atrascop/Nextflix-App">
+            github.com/atrascop/Nextflix-App
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
-
-      <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
-      <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio>
+      <SimpleGrid>
+        <WorkImage src="/images/works/net1.png" alt="mode.tokyo" />
+      </SimpleGrid>
+      <WorkImage src="/images/works/net2.png" alt="CarePluse" />
     </Container>
   </Layout>
 )

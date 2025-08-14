@@ -20,6 +20,18 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6} z>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="goodshape"
+            title="GoodShape"
+            thumbnail={thumbFourPainters2}
+          >
+            AI-Powered Fitness Platform with AI-Fitness combines Next.js and
+            Prisma for a fast, scalable full-stack framework. With Tailwind CSS,
+            MUI, and Radix UI, your interfaces are responsive, beautiful, and
+            accessible.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="flight-app"
@@ -46,18 +58,9 @@ const Works = () => (
             title="HealtheCare"
             thumbnail={thumbFourPainters}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="goodshape"
-            title="GoodShape"
-            thumbnail={thumbFourPainters2}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            A modern healthcare boilerplate with secure auth, form validation,
+            and responsive UI – built with Next.js 14, Tailwind CSS, and
+            Appwrite
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -104,16 +107,18 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
           <WorkGridItem id="netflix" thumbnail={thumbPichu2} title="Netflix">
-            netflix clone
+            Netflix clone :A minimal UI boilerplate with clean design, custom
+            scrollbars, and production-ready icons – built with Next.js,
+            Tailwind CSS, and TypeScript
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Amazona">
+          <WorkGridItem id="amazona" thumbnail={thumbMenkiki} title="Amazona">
             Next.js E-Commerce Website lets you build a high-performance online
             store with modern web technologies.
           </WorkGridItem>
         </Section>
-        <Section delay={0.5}>
+        {/* <Section delay={0.5}>
           <WorkGridItem
             id="freedbtagger"
             thumbnail={thumbFreeDBTagger}
@@ -127,7 +132,7 @@ const Works = () => (
             P2P private file sharing tool with MSN Messenger integration for
             Windows
           </WorkGridItem>
-        </Section>
+        </Section> */}
       </SimpleGrid>
     </Container>
   </Layout>

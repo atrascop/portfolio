@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { PostGridItem } from '../components/grid-item'
 
 import thumbAappscript from '../public/images/posts/appscript.png'
+import thumbAappscript2 from '../public/images/posts/n8n.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -16,47 +17,39 @@ const Posts = () => (
         <Section>
           <PostGridItem
             id="appscript"
-            title="🛠️ How I Automated Google Workspace Using Apps Script"
+            title="🚀 Automating Google Sheets: Boosting Productivity with Smart Workflows!"
             thumbnail={thumbAappscript}
           >
-            Web scraping{' '}
+            Web automation{' '}
           </PostGridItem>
         </Section>
 
         <Section>
           <PostGridItem
             id="scraping"
-            title="🕷️ Scraping the Web with Puppeteer: Real Projects I’ve Built"
+            title="⚡ From Manual to Magical: Automating Tasks with Google Apps Script2025"
             thumbnail={thumbAappscript}
           >
-            Web scraping{' '}
+            Web automation{' '}
+          </PostGridItem>
+        </Section>
+
+        <Section>
+          <PostGridItem
+            id="n8n"
+            title="🚀 Automating Google Sheets: Boosting Productivity with Smart Workflows!"
+            thumbnail={thumbAappscript2}
+          >
+            n8n{' '}
           </PostGridItem>
         </Section>
         <Section>
           <PostGridItem
-            id="margelo"
-            title="🚀 Learning React + Tailwind by Cloning My Own Portfolio"
-            thumbnail={thumbAappscript}
+            id="lead"
+            title="🚀 Automating Lead Generation with n8n: From Clicks to Clients"
+            thumbnail={thumbAappscript2}
           >
-            Frontend{' '}
-          </PostGridItem>
-        </Section>
-        <Section>
-          <PostGridItem
-            id="margelo"
-            title="⚙️ Building My DevOps CI/CD Pipeline from Scratch"
-            thumbnail={thumbAappscript}
-          >
-            DevOps{' '}
-          </PostGridItem>
-        </Section>
-        <Section>
-          <PostGridItem
-            id="margelo"
-            title="⚙️ How I Built Real-World APIs with Node.js & MongoDB"
-            thumbnail={thumbAappscript}
-          >
-            Backend{' '}
+            n8n{' '}
           </PostGridItem>
         </Section>
       </SimpleGrid>

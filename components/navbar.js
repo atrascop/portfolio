@@ -120,19 +120,18 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://store.craftz.dog/">
-                  Wallpapers
+                <MenuItem
+                  className="text-purple-600"
+                  as={MenuLink}
+                  href="https://automation-portfolio.vercel.app/"
+                >
+                  Automations
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
+
+                <MenuItem as={Link} href="https://github.com/atrascop">
                   View Source
                 </MenuItem>
               </MenuList>

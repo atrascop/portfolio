@@ -62,13 +62,7 @@ const Work = () => (
             Amazona <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-        {/* <ListItem>
-          <Meta>Presentation</Meta>
-          <Link href="https://speakerdeck.com/craftzdog/caffedeoshou-qing-ben-ge-deipuraninguiosapuri">
-            Caffeでお手軽本格ディープラーニングアプリ @potatotips{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem> */}
+
         <ListItem>
           <Meta>Source</Meta>
           <Link href="https://github.com/atrascop/next-tailwind-amazona">
@@ -93,7 +87,6 @@ const Work = () => (
         </Link>
       </Box>
 
-      {/* <WorkImage src="/images/works/menkiki_eyecatch.png" alt="menkiki" /> */}
       <WorkImage src="/images/works/mern1.png" alt="Amazona" />
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/mern2.png" alt="Amazona" />

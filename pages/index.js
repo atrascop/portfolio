@@ -10,15 +10,14 @@ import {
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+
 import Image from 'next/image'
 
 const Home = () => (
@@ -40,7 +39,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Med baghough
           </Heading>
-          <p>Digital Craftsman ( Developer / Designer )</p>
+          <p> Digital Problem-Solver ( Automation & Web Development )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -78,20 +77,6 @@ const Home = () => (
           knack for all things launching products, from planning and designing
           all the way to solving real-life problems with code. When not online,
           he loves doing sports{' '}
-          {/* <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link> */}
-          {/* . He publishes content for webs his products and his YouTube channel
-          called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers. */}
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -115,17 +100,17 @@ const Home = () => (
           Born in Casablanca, Morocco.
         </BioSection>
         <BioSection>
-          <BioYear>2019-2021</BioYear>
-          Completed Diploma Specialized Technician in Machine and Tool
-          Maintenance in Plastics Processing
+          <BioYear>2016-2017</BioYear>
+          Baccalaureate in Experimental Sciences
         </BioSection>
         <BioSection>
           <BioYear>2018-2019</BioYear>o Training: Specialized Technician in
           Electromechanics of Automated Systems
         </BioSection>
         <BioSection>
-          <BioYear>2016-2017</BioYear>
-          Baccalaureate in Experimental Sciences
+          <BioYear>2019-2021</BioYear>
+          Completed Diploma Specialized Technician in Machine and Tool
+          Maintenance in Plastics Processing
         </BioSection>
       </Section>
 
@@ -142,10 +127,7 @@ const Home = () => (
             Reading
           </Link>
           , Playing Drums,{' '}
-          <Link
-            href="https://fr.wikipedia.org/wiki/Wydad_Athletic_Club_(football)"
-            target="_blank"
-          >
+          <Link href="https://en.wikipedia.org/wiki/Wydad_AC" target="_blank">
             Wydad
           </Link>
           , Photography, web scraping
@@ -168,28 +150,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem> */}
-          {/* <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem> */}
+
           <ListItem>
             <Link href="https://www.instagram.com/mooatlas" target="_blank">
               <Button
@@ -202,43 +163,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;200k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p> */}
-
-        {/* <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box> */}
       </Section>
     </Container>
   </Layout>
