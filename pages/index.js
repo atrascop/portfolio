@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -95,22 +94,23 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
+
         <BioSection>
-          <BioYear>1997</BioYear>
-          Born in Casablanca, Morocco.
+          <BioYear>2019-2021</BioYear>
+          Completed Diploma Specialized Technician in Machine and Tool
+          Maintenance in Plastics Processing
+        </BioSection>
+        <BioSection>
+          <BioYear>2018-2019</BioYear>Completed Training: Specialized Technician
+          in Electromechanics of Automated Systems
         </BioSection>
         <BioSection>
           <BioYear>2016-2017</BioYear>
           Baccalaureate in Experimental Sciences
         </BioSection>
         <BioSection>
-          <BioYear>2018-2019</BioYear>o Training: Specialized Technician in
-          Electromechanics of Automated Systems
-        </BioSection>
-        <BioSection>
-          <BioYear>2019-2021</BioYear>
-          Completed Diploma Specialized Technician in Machine and Tool
-          Maintenance in Plastics Processing
+          <BioYear>1997</BioYear>
+          Born in Casablanca, Morocco.
         </BioSection>
       </Section>
 

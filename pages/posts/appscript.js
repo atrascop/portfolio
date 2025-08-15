@@ -1,14 +1,4 @@
-import {
-  Box,
-  Container,
-  Badge,
-  Link,
-  ListItem,
-  UnorderedList,
-  Heading,
-  Center
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, ListItem, UnorderedList } from '@chakra-ui/react'
 import { Title } from '../../components/post'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'

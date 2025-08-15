@@ -27,7 +27,7 @@ const Posts = () => (
         <Section>
           <PostGridItem
             id="scraping"
-            title="⚡ From Manual to Magical: Automating Tasks with Google Apps Script2025"
+            title="⚡ From Manual to Magical: Automating Tasks with Google Apps Script 2025"
             thumbnail={thumbAappscript}
           >
             Web automation{' '}
