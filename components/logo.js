@@ -32,7 +32,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={6}
         >
-          Med baghough
+          Med Baghough
         </Text>
       </LogoBox>
     </Link>

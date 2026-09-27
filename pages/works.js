@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbInkdrop from '../public/images/works/flight1.png'
 import thumbWalknote from '../public/images/works/portfolio1.png'
 import thumbFourPainters from '../public/images/works/care1.png'
+import thumbFourPainters1 from '../public/images/works/store1.png'
 import thumbFourPainters2 from '../public/images/works/shape1.png'
 import thumbMenkiki from '../public/images/works/mern1.png'
 import thumbPichu2 from '../public/images/works/net1.png'
@@ -14,9 +15,28 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
+        Sass
+      </Heading>
+      {/* hsvhvhs 2*/}
+      <SimpleGrid columns={[1, 1, 2]} gap={6} z>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="store-management"
+            title="Store management"
+            thumbnail={thumbFourPainters1}
+          >
+            **E-commerce Store Management Dashboard** — A full-stack dashboard
+            for managing Shopify orders, products, delivery, returns, Meta Ads,
+            and store performance, with automated data synchronization and
+            profit/ROAS analytics.
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
+      {/* hsvhvhs 2*/}
+      <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
-
       <SimpleGrid columns={[1, 1, 2]} gap={6} z>
         <Section delay={0.1}>
           <WorkGridItem

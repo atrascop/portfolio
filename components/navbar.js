@@ -97,7 +97,10 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-          <LinkItem href="https://automation-portfolio.vercel.app/" path={path}>
+          <LinkItem
+            href="https://automation-portfolio-atrascops-projects.vercel.app/"
+            path={path}
+          >
             Automations
           </LinkItem>
         </Stack>
@@ -123,7 +126,7 @@ const Navbar = props => {
                 <MenuItem
                   className="text-purple-600"
                   as={MenuLink}
-                  href="https://automation-portfolio.vercel.app/"
+                  href="https://automation-portfolio-atrascops-projects.vercel.app/"
                 >
                   Automations
                 </MenuItem>

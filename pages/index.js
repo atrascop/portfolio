@@ -15,7 +15,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoGoogle } from 'react-icons/io5'
 
 import Image from 'next/image'
 
@@ -38,7 +38,17 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Med baghough
           </Heading>
-          <p> Digital Problem-Solver ( Automation & Web Development )</p>
+          <p>
+            {' '}
+            Digital Problem-Solver ({' '}
+            <Link
+              href="https://automation-portfolio-atrascops-projects.vercel.app/"
+              target="_blank"
+            >
+              Automation
+            </Link>{' '}
+            & Web Development )
+          </p>
         </Box>
         <Box
           flexShrink={0}
@@ -57,7 +67,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/takuya.jpg"
+              src="/images/red.png"
               alt="Profile image"
               width="100"
               height="100"
@@ -94,6 +104,10 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
+        <BioSection>
+          <BioYear>2023-2026</BioYear>
+          Technicien Spécialisé en Développement Informatique
+        </BioSection>
 
         <BioSection>
           <BioYear>2019-2021</BioYear>
@@ -159,6 +173,20 @@ const Home = () => (
                 leftIcon={<IoLogoInstagram />}
               >
                 @mooatlas
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=simozrt7@gmail.com&su=Web Scraping Project Inquiry"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGoogle />}
+              >
+                Gmail
               </Button>
             </Link>
           </ListItem>
